@@ -18,4 +18,17 @@ imshow((gy + 4)/8);
 imshow(gmag / (4 * sqrt(2))); 
 imshow((gdir + 180) / 360); %As range in [-180 180]
 
+%% Find Pixels with desired gradient direction
+gradient_pixel = select_gdir(gmag, gdir, 1, 30, 45); % 45degree with +/- 15;
+imshow(gradient_pixel);
+% We can find pixels within any range
+gradient_pixel = select_gdir(gmag, gdir, 1, -15, 15);
+imshow(gradient_pixel);
+gradient_pixel = select_gdir(gmag, gdir, 1, -150, -120);
+imshow(gradient_pixel);
+
 %% Function to find the pixels which lie in given mag & angle range
+
+function result = select_gdir(gmag, gdir, min_mag, min_ang, max_ang)
+    result = gmag >= min_mag & min_ang <= gdir & max_ang >= gdir;
+end
