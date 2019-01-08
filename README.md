@@ -4,6 +4,8 @@ Using MATLAB with image processing library. This repository will contain all the
 
 ### Current Progess
 5th Jan - Finished L4.
+8th Jan - Finished L5.
 
 #### To-Do
-Create a proper repository structure with codes belonging to each lesson in the proper sub-folder.
+- Create a proper repository structure with codes belonging to each lesson in the proper sub-folder.
+- Proper Indexing of subfolders.
