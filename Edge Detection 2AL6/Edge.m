@@ -12,6 +12,6 @@ froomer_edge = edge(froomer_gray, 'canny');
 
 %% Display the hidden code
 %To find the hidden code, we add the two images by using &(ampersand)
-%operator, as the two images are binary.
+%operator, as the two images are binary images.
 imshow(frizzy_edge & froomer_edge);
 %The result is 007
