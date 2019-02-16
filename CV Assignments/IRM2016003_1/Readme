@@ -1,0 +1,8 @@
+Harris Edge Detection -- IRM2016003
+
+To run: python IRM2016003_1.py
+Please make sure input image (checkerboard.png) is in the same directory as script or change the script accordingly.
+
+Requirements:
+cv2
+numpy
